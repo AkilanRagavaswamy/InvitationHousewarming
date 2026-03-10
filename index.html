@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Housewarming | Wednesday April 1st</title>
+    
+    <meta property="og:title" content="Housewarming Ceremony - April 1st">
+    <meta property="og:description" content="We cordially invite you to our housewarming ceremony at R K Nagar, Vellamodi.">
+    <meta property="og:image" content="og-image.jpeg"> 
+    <meta property="og:type" content="website">
+
     <link rel="icon" href="https://fav.farm/🏠" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
@@ -25,7 +31,6 @@
             color: #333;
         }
 
-        /* Top Scripture Banner */
         .scripture-header {
             background-color: #fff;
             padding: 20px 15px;
@@ -52,11 +57,12 @@
             margin-top: 5px;
         }
 
-        /* Hero Section - FIXED IMAGE URL */
         .hero {
             position: relative;
             height: 60vh;
             min-height: 400px;
+            /* Background remains a remote modern house URL as a fallback, 
+               or you can change it to url('house-bg.jpg') */
             background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
                         url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1500&q=80');
             background-size: cover;
@@ -97,7 +103,6 @@
         .time-box span { display: block; font-size: clamp(1.2rem, 4vw, 1.6rem); font-weight: 600; }
         .time-label { font-size: 0.6rem; text-transform: uppercase; font-weight: 600; opacity: 0.7; }
 
-        /* Main Content */
         .content {
             width: 92%;
             max-width: 650px;
@@ -141,7 +146,6 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.03);
         }
 
-        /* Navigate Button */
         .nav-btn {
             background: var(--primary);
             color: white;
@@ -164,7 +168,6 @@
             box-shadow: 0 15px 30px rgba(44, 62, 80, 0.3);
         }
 
-        /* Invited By Section */
         .invited-by {
             margin-top: 45px;
             padding-top: 35px;
@@ -183,7 +186,6 @@
             line-height: 2;
             color: #444;
             letter-spacing: 1px;
-            text-transform: uppercase;
             font-weight: 400;
         }
 
@@ -215,7 +217,7 @@
 
     <div class="content">
         <div class="family-photo-container">
-            <img src="https://xenophobic-apricot-resgc4ophy.edgeone.app/IMG_5151.jpeg" alt="Family" class="family-photo">
+            <img src="family-photo.jpeg" alt="Family Photo" class="family-photo">
         </div>
 
         <h2 style="font-family: 'Dancing Script'; font-size: 2.5rem; color: var(--primary); margin: 0;">Wednesday</h2>
@@ -261,7 +263,6 @@
             });
         };
 
-        // April 1st, 2026 @ 09:30 AM
         const target = new Date("April 1, 2026 09:30:00").getTime();
         const timer = setInterval(() => {
             const now = new Date().getTime();
